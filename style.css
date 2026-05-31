@@ -39,7 +39,7 @@ header img {
     padding: 25px;
     background-color: #F8F9FA;
     width: 100%;
-    width: 1024px;
+   max-width: 1024px;
     flex-grow: 1;
     height: fit-content;
     border-radius: 20px;
