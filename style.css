@@ -38,6 +38,7 @@ header img {
     margin: 20px;
     padding: 25px;
     background-color: #F8F9FA;
+    width: 100%;
     width: 1024px;
     flex-grow: 1;
     height: fit-content;
@@ -165,3 +166,116 @@ footer {
     color: white;
     border-top: 3px solid #DEB76C;
 }
+
+/* ===== Laptop kecil ===== */
+@media screen and (max-width: 1024px) {
+    .wrapper .container {
+        width: 90%;
+        margin: 16px;
+        padding: 20px;
+    }
+
+    header {
+        padding: 24px;
+    }
+
+    header img {
+        height: 50px;
+    }
+}
+
+/* ===== Tablet ===== */
+@media screen and (max-width: 768px) {
+    .wrapper .container {
+        width: 95%;
+        padding: 18px;
+    }
+
+    .search-book > form {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .action {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .action button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    input[type=text],
+    input[type=number] {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header img {
+        height: 45px;
+    }
+}
+
+/* ===== HP ===== */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 18px;
+    }
+
+    header img {
+        height: 36px;
+    }
+
+    .wrapper .container {
+        width: 95%;
+        margin: 10px;
+        padding: 14px;
+        border-radius: 14px;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type=text],
+    input[type=number] {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .btn-submit {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .book-item {
+        padding: 12px;
+    }
+
+    .action {
+        flex-direction: column;
+    }
+
+    .action button {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
